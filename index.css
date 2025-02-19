@@ -53,6 +53,8 @@ body {
         align-items: center;
         justify-content: space-around;
         padding: 0;
+        z-index: 1000;
+        height: 56px;
     }
 
     div.header .details {
@@ -63,6 +65,11 @@ body {
         display: flex;
         gap: 10px;
     }
+
+    body {
+        padding-bottom: 56px;
+    } 
+
 }
 
 /* Icônes devant les liens GitHub, LinkedIn et téléphone */
@@ -109,6 +116,10 @@ body {
 @media screen and (max-width: 590px) {
     div.MsoTableGrid {
         grid-template-columns: 1fr;
+    }
+
+    div.MsoTableGrid h2 {
+        font-size: 20px;
     }
 
     div.MsoTableGrid>div {
