@@ -28,7 +28,7 @@ body {
 .header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     padding: 20px 0;
     font-size: 14px;
     line-height: 0.8;
@@ -36,6 +36,33 @@ body {
 
 .header p {
     margin-bottom: 0;
+}
+
+.header .summary {
+    display: none;
+}
+
+@media screen and (max-width: 500px) {
+    div.header {
+        position: fixed;
+        bottom: 0;
+        left: 0px;
+        background-color: #493c3c;
+        color: #f9f9f9;
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+        padding: 0;
+    }
+
+    div.header .details {
+        display: none;
+    }
+
+    div.header .summary {
+        display: flex;
+        gap: 10px;
+    }
 }
 
 /* Icônes devant les liens GitHub, LinkedIn et téléphone */
@@ -63,31 +90,39 @@ body {
 }
 
 .MsoTableGrid {
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
-.MsoTableGrid div {
-    flex: 1;
-    padding: 20px;
+.MsoTableGrid>div {
+    padding: 10px;
     background-color: #fff;
-    border-radius: 8px;
-    /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);*/
-    margin: 20px;
-    min-width: 300px;
-    max-width: 400px;
+    margin: 0px;
     text-align: center;
-}
-
-.MsoTableGrid div {
-    margin: 0 20px;
-    /*border-right: 1px solid #ccc;*/
+    border-right: 1px solid #ccc;
 
     &:last-child {
         border-right: 0;
     }
 }
+
+@media screen and (max-width: 590px) {
+    div.MsoTableGrid {
+        grid-template-columns: 1fr;
+    }
+
+    div.MsoTableGrid>div {
+        border-right: 0;
+        border-bottom: 1px solid #ccc;
+        
+        &:last-child {
+            border-bottom: 0;
+        }    }
+
+
+}
+
+
 
 /* Titres avec tailles modérées */
 h1 {
@@ -105,6 +140,13 @@ h2 {
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 16px;
+
+}
+
+.chronology h2 {
+    color: #f9f9f9;
+    background-color: #863e3e;
+    padding-left:10px;
 }
 
 h3 {
@@ -145,6 +187,7 @@ p {
 .Note {
     font-size: 14px;
     background-color: #dad2d2;
+    padding-left: 10px;
 }
 
 /* Liens discrets mais visibles */
