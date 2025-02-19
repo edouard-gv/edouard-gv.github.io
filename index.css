@@ -25,51 +25,30 @@ body {
     flex-grow: 1;
 }
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    padding: 20px 0;
-    font-size: 14px;
-    line-height: 0.8;
+/* Titres avec tailles modérées */
+h1 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
-.header p {
-    margin-bottom: 0;
+h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+
 }
 
-.header .summary {
-    display: none;
+h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 12px;
 }
 
-@media screen and (max-width: 500px) {
-    div.header {
-        position: fixed;
-        bottom: 0;
-        left: 0px;
-        background-color: #493c3c;
-        color: #f9f9f9;
-        width: 100%;
-        align-items: center;
-        justify-content: space-around;
-        padding: 0;
-        z-index: 1000;
-        height: 56px;
-    }
-
-    div.header .details {
-        display: none;
-    }
-
-    div.header .summary {
-        display: flex;
-        gap: 10px;
-    }
-
-    body {
-        padding-bottom: 56px;
-    } 
-
+/* Espacements pour les paragraphes */
+p {
+    margin-bottom: 16px;
 }
 
 /* Icônes devant les liens GitHub, LinkedIn et téléphone */
@@ -96,110 +75,6 @@ body {
     background-image: url('https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg');
 }
 
-.MsoTableGrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-.MsoTableGrid>div {
-    padding: 10px;
-    background-color: #fff;
-    margin: 0px;
-    text-align: center;
-    border-right: 1px solid #ccc;
-
-    &:last-child {
-        border-right: 0;
-    }
-}
-
-@media screen and (max-width: 590px) {
-    div.MsoTableGrid {
-        grid-template-columns: 1fr;
-    }
-
-    div.MsoTableGrid h2 {
-        font-size: 20px;
-    }
-
-    div.MsoTableGrid>div {
-        border-right: 0;
-        border-bottom: 1px solid #ccc;
-        
-        &:last-child {
-            border-bottom: 0;
-        }    }
-
-
-}
-
-
-
-/* Titres avec tailles modérées */
-h1 {
-    font-size: 28px;
-    font-weight: 600;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.small-h1 {
-    font-size: 18px;
-}
-
-h2 {
-    font-size: 24px;
-    font-weight: 600;
-    margin-bottom: 16px;
-
-}
-
-.chronology h2 {
-    color: #f9f9f9;
-    background-color: #863e3e;
-    padding-left:10px;
-}
-
-h3 {
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 12px;
-}
-
-/* Espacements pour les paragraphes */
-p {
-    margin-bottom: 16px;
-}
-
-/* Styles particulier aux différents paragraphes */
-.MsoListParagraph {
-    margin-block-start: 4px;
-    position: relative;
-    padding-left: 20px;
-    line-height: 1.3;
-    margin-bottom: 0px;
-}
-
-.MsoListParagraph::before {
-    content: '\2022'; /* Puce Unicode */
-    position: absolute;
-    left: 0;
-    color: #333;
-    font-size: 14px;
-}
-
-.MsoQuote {
-    font-style: italic;
-    background-color: #f9f9f9;
-    border-left: 4px solid #863e3e;
-    padding-left: 10px;
-}
-
-.Note {
-    font-size: 14px;
-    background-color: #dad2d2;
-    padding-left: 10px;
-}
 
 /* Liens discrets mais visibles */
 a {
