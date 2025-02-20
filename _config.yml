@@ -28,8 +28,11 @@ domain: edouard-gv.github.io
 twitter_username: edou_art
 github_username: edouard-gv
 linkedin_username: edouardgomezvaez
-site.mastodon.username: edou_art
-site.mastodon.instance: piaille.fr
+mastodon:
+  - username: edou_art
+    instance: piaille.fr
+minima:
+  date_format: "%d/%m/%Y"
 
 # Build settings
 theme: minima
