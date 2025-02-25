@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Construire pour AWS sa couche python comportant des bibliothèques natives"
-date:   2025-02-19 18:19:52 +0100
+date:   2021-11-25 18:19:52 +0100
 categories: jekyll update
 ---
 
