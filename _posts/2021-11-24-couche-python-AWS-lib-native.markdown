@@ -19,14 +19,14 @@ Je trouve le blog d'Arolla long à charger, de même que les deux sites perso d'
 ## Jour 1, matin : arrivée sans encombre au camp de base local
 
 
-[](/media/Layer-AWS-carte-j1.png)
+![carte jour 1](/media/Layer-AWS-carte-j1.png)
 
 En une heure, j'ai ma stack OpenSearch (ex « ELK ») déployée dans AWS, par la console, en mode light vraiment pas sécurisé, grâce au tuto officiel : [https://docs.aws.amazon.com/opensearch-service/latest/developerguide/gsgcreate-domain.html](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/gsgcreate-domain.html)
 
 Deux heures plus tard, j'ai un bout de code en local qui tourne dans mon PyCharm, qui me permet de voir mes premières données dans Kibana [(1)](#note1).  
 [https://github.com/edouard-gv/web-monitor/blob/f22f17058ced0ec69cef8cd5c9c1b774b640d760/monitor.py](https://github.com/edouard-gv/web-monitor/blob/f22f17058ced0ec69cef8cd5c9c1b774b640d760/monitor.py)
 
-[](/media/Layer-AWS-Premières-mesures-manuelles.png)
+![mesures](/media/Layer-AWS-Premières-mesures-manuelles.png)
 
 Avec les requirements suivant :
 
@@ -60,8 +60,7 @@ Je me suis bien perdu, et j'ai donc dû revenir au camp de base, la nuit tombait
 
 ## Jour 2 : sur le bon chemin du col, on croise un drôle d'oiseau DLL
 
-
-[](/media/Layer-AWS-carte-j2.png)
+![carte jour 2](/media/Layer-AWS-carte-j2.png)
 
 Après une nuit de sommeil, les idées plus au clair et donc mes recherches google mieux dirigées, je suis tombé sur un tuto du support aws [https://aws.amazon.com/fr/premiumsupport/knowledge-center/lambda-layer-simulated-docker/](https://aws.amazon.com/fr/premiumsupport/knowledge-center/lambda-layer-simulated-docker/)
 
@@ -96,7 +95,7 @@ Je retourne me coucher dans ma tente...
 ## Jour 3 : construire sa propre image docker pour générer la couche lambda
 
 
-[](/media/Layer-AWS-carte-j3.png)
+![carte jour 3](/media/Layer-AWS-carte-j3.png)
 
 En surfant un peu, je commence à sentir qu'il va bien falloir que je me débatte avec une image docker ad-hoc. Je crois que ce qui m'a mis sur le chemin est cet article-là : [https://github.com/awslabs/serverless-image-handler/issues/44](https://github.com/awslabs/serverless-image-handler/issues/44), ça n'avait rien à voir, mais il était sorti en tapant pycurl aws dans google.
 
@@ -179,7 +178,7 @@ Depuis, j'ai découvert que j'aurais pu passer par d'autres chemins, notamment e
 Ce que je ne savais pas, c'est que l'ECS Elastic-stack finalement me coûtera plus cher qu'un abonnement Netvigie (30€ par mois), et qu'on ne peut pas l'éteindre sans le supprimer. Un mois plus tard, je le supprimerai donc, sans avoir même réussi à sauvegarder les données que j'y avais indexées, n'ayant pas réussi à créer un snapshot de l'index [(2)](#note2).  
 Ce n'est donc pas demain que je monterai un concurrent de NetVigie :).
 
-[](/media/Layer-AWS-carte.png)
+![carte générale](/media/Layer-AWS-carte.png)
 
 * * *
 
