@@ -40,6 +40,18 @@ ul, ol, dl, figure,
   margin-bottom: $spacing-unit / 2;
 }
 
+.notes {
+  & h1, h2, h3, h4, h5, h6,
+  p, blockquote, pre, ol, dl, figure,
+  %vertical-rhythm {
+    margin-bottom: $spacing-unit / 3;
+  }
+  
+}
+
+.notes .post-list > li {
+  margin-bottom: $spacing-unit / 2;
+}
 
 
 /**
