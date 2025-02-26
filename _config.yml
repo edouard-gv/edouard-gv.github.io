@@ -39,6 +39,21 @@ theme: minima
 plugins:
   - jekyll-feed
 
+# Liste des catégories
+collections:
+  category:
+    output: true # générer la page HTML
+    permalink: /:name/ #/:collection/:name/index.html
+    # exemple -> /category/informatique/index.html
+
+defaults:
+  - scope:
+      path: ""
+      type: category
+    values:
+      layout: "category"
+      # layout utilisé -> _layouts/category.html
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

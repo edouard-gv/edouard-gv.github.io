@@ -2,7 +2,7 @@
 layout: post
 title:  "Devenir ce qu'on rêve d'être"
 date:   2025-02-24 09:00:00 +0100
-categories: 
+categories: leadership
 ---
 
 Ce matin, j’ai reçu un message. Quelques lignes à peine. Pas de grandes envolées lyriques, juste une phrase posée là, presque en confidence :

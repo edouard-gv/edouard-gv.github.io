@@ -2,7 +2,7 @@
 layout: post
 title:  "Transformer un tabou en commun grâce au collectif (et à la philosophie critique aussi)"
 date:   2025-02-19 18:19:52 +0100
-categories: 
+categories: leadership
 ---
 
 C'était lors d'un atelier. Un de ces moments où la parole circule, où l'on met des mots sur des intuitions
