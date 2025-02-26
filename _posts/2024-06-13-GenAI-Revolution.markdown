@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Éléments de révolution de la GenAI"
+title:  "Éléments sur la révolution GenAI"
 date:   2024-06-13 21:23:00 +0100
 categories: notes
 ---
