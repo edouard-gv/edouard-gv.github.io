@@ -9,6 +9,9 @@ layout: default
 {%- else -%}
 {%-   assign posts = site.posts -%}
 {%- endif -%}
+{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+{%- assign first_post = true -%}
+
 
   {%- if page.title -%}
     <h1 class="page-heading">{{ page.title }}</h1>
@@ -17,16 +20,18 @@ layout: default
   {{ content }}
 
   {%- if posts.size > 0 -%}
+    {%- for post in posts -%}
+      {%- if post.categories[1] <> "notes" -%}
+        {%- if first_post == true -%}
     <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
     <ul class="post-list">
-      {%- for post in posts -%}
-      {%- if post.categories[0] <> "notes" -%}
+        {%- endif -%}
+  
       <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}
-          {%- if is_cat != true -%}
+        <span class="post-meta">{{ post.date | date: date_format }} 
+        {% if is_cat != true -%}
           — <a href="/{{ post.categories | first}}/">{{ post.categories | first | capitalize}}</a>
-          {%- endif -%}
+        {%- endif -%}
         </span>
         <h3>
           <a class="post-link" href="{{ post.url | relative_url }}">
@@ -37,19 +42,22 @@ layout: default
           {{ post.excerpt }}
         {%- endif -%}
       </li>
+        {%- assign first_post = false -%}
       {%- endif -%}
-      {%- endfor -%}
+    {%- endfor -%}
+    {%- if first_post == false -%}
     </ul>
-    <div class="notes">
+    {%- endif -%}
+  <div class="notes">
     <h3>Notes</h3>
     <p class="post-meta">Quelques notes prises sur le vif, beaucoup plus contextuelles</p>
     <ul class="post-list">
-      {%- for post in posts -%}
-      {%- if post.categories[0] == "notes" -%}
+    {%- for post in posts -%}
+      {%- if post.categories[1] == "notes" -%}
       <li>
-        <span class="post-meta">{{ post.date | date: date_format }}
-          {%- if is_cat != true  -%}
-           — <a href="/{{ post.categories[1]}}/">{{ post.categories[1] | capitalize}}</a>
+        <span class="post-meta">{{ post.date | date: date_format }} 
+          {% if is_cat != true  -%}
+           — <a href="/{{ post.categories | first }}/">{{ post.categories | first | capitalize}}</a>
           {%- endif -%}
         </span>
         <h4>
@@ -62,7 +70,7 @@ layout: default
         {%- endif -%}
       </li>
       {%- endif -%}
-      {%- endfor -%}
+    {%- endfor -%}
     </ul>
     </div>
     
