@@ -12,7 +12,7 @@ layout: default
 {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
 {%- assign first_post = true -%}
 {%- assign categories_meta = site.collections | where: "label", "category" | first -%}
-{%- assign spec_cat = "notes, fables" | split: ", " -%}
+{%- assign spec_cat = "notes, fables, craft-leadership" | split: ", " -%}
 
   {%- if page.title -%}
     <h1 class="page-heading">{{ page.title }}</h1>
@@ -69,9 +69,8 @@ layout: default
           {%- endif -%}
           </span>
           <h4>
-            <a href="{{ post.url | relative_url }}">
-              {{ post.title | escape }}
-            </a>
+            {%- if post.description -%}{{ post.description }}&nbsp;:&nbsp; {%- endif -%}
+            <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
           </h4>
           {%- if site.show_excerpts -%}
             {{ post.excerpt }}
