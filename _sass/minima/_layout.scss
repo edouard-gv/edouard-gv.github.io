@@ -207,6 +207,16 @@
   @include relative-font-size(1.5);
 }
 
+/**
+ * Navigation between posts
+ */
+
+ .nav-links {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+ }
+
 
 
 /**

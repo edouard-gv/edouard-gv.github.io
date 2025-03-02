@@ -11,7 +11,8 @@ layout: default
 {%- endif -%}
 {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
 {%- assign first_post = true -%}
-
+{%- assign categories_meta = site.collections | where: "label", "category" | first -%}
+{%- assign spec_cat = "notes, fables" | split: ", " -%}
 
   {%- if page.title -%}
     <h1 class="page-heading">{{ page.title }}</h1>
@@ -21,7 +22,8 @@ layout: default
 
   {%- if posts.size > 0 -%}
     {%- for post in posts -%}
-      {%- if post.categories[1] <> "notes" -%}
+      {%- if spec_cat contains post.categories[1] -%}
+      {%- else -%}
         {%- if first_post == true -%}
     <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
     <ul class="post-list">
@@ -29,7 +31,7 @@ layout: default
   
       <li>
         <span class="post-meta">{{ post.date | date: date_format }} 
-        {% if is_cat != true -%}
+        {%- if is_cat != true -%}
           — <a href="/{{ post.categories | first}}/">{{ post.categories | first | capitalize}}</a>
         {%- endif -%}
         </span>
@@ -44,35 +46,45 @@ layout: default
       </li>
         {%- assign first_post = false -%}
       {%- endif -%}
-    {%- endfor -%}
+    {% endfor %}
     {%- if first_post == false -%}
     </ul>
     {%- endif -%}
-  <div class="notes">
-    <h3>Notes</h3>
-    <p class="post-meta">Quelques notes prises sur le vif, beaucoup plus contextuelles</p>
-    <ul class="post-list">
-    {%- for post in posts -%}
-      {%- if post.categories[1] == "notes" -%}
-      <li>
-        <span class="post-meta">{{ post.date | date: date_format }} 
-          {% if is_cat != true  -%}
-           — <a href="/{{ post.categories | first }}/">{{ post.categories | first | capitalize}}</a>
-          {%- endif -%}
-        </span>
-        <h4>
-          <a href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h4>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
+
+    {%- for cat in spec_cat -%}
+    {%- assign cat_meta = categories_meta.docs | where: "category", cat | first -%}
+    {%- assign first_post = true -%}
+      {%- for post in posts -%}
+        {%- if post.categories[1] == cat -%}
+          {%- if first_post == true -%}
+    <div class="notes">
+      <h3>{{cat_meta.title}}</h3>
+      <p class="post-meta">{{ cat_meta.description }}</p>
+      <ul class="post-list">
         {%- endif -%}
-      </li>
-      {%- endif -%}
-    {%- endfor -%}
-    </ul>
+        <li>
+          <span class="post-meta">{{ post.date | date: date_format }} 
+          {% if is_cat != true  -%}
+          — <a href="/{{ post.categories | first }}/">{{ post.categories | first | capitalize}}</a>
+          {%- endif -%}
+          </span>
+          <h4>
+            <a href="{{ post.url | relative_url }}">
+              {{ post.title | escape }}
+            </a>
+          </h4>
+          {%- if site.show_excerpts -%}
+            {{ post.excerpt }}
+          {%- endif -%}
+        </li>
+          {%- assign first_post = false -%}
+        {%- endif -%}
+      {% endfor %}
+    {% endfor %}
+    {%- if first_post == false -%}
+      </ul>
     </div>
+    {%- endif -%}
     
     {%- if is_cat -%}
     <a href="/">Retour à l'accueil</a>
