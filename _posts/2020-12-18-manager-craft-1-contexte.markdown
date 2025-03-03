@@ -6,7 +6,7 @@ categories: craft craft-leadership
 description: "Introduction"
 ---
 
-Arolla est une ESN[\[1\]](#_ftn1) qui a toujours mis au centre de sa culture le software craftership[\[2\]](#_ftn2) (cf. paragraphe suivant), et cherche aujourd’hui à réfléchir autour d’une offre de manager fidèle à ces valeurs. L’objectif de cette étude est d’articuler management et software craftership, afin de définir spécifiquement le sens d’une telle offre, et accompagner les évolutions qui mettent en question les certitudes et les habitudes concernant les managers d’équipe de développement logiciel, et qui semblent s’accélérer de plus en plus :
+<a name="_ftnref1"></a><a name="_ftnref2"></a>Arolla est une ESN[\[1\]](#_ftn1) qui a toujours mis au centre de sa culture le software craftership[\[2\]](#_ftn2) (cf. paragraphe suivant), et cherche aujourd’hui à réfléchir autour d’une offre de manager fidèle à ces valeurs. L’objectif de cette étude est d’articuler management et software craftership, afin de définir spécifiquement le sens d’une telle offre, et accompagner les évolutions qui mettent en question les certitudes et les habitudes concernant les managers d’équipe de développement logiciel, et qui semblent s’accélérer de plus en plus :
 
 *   la complexité croissante des réalisations, l’accélération des rythmes et le niveau croissant d’incertitude
 *   l’essor du software craftership, autant dans les pratiques que les attitudes
@@ -44,6 +44,6 @@ Néanmoins, une prochaine étape serait d’interroger les managers et leurs res
 
 * * *
 
-[\[1\]](#_ftnref1) Entreprise au service du numérique, ce qu’on appelait avant SSII (Société de service en ingénierie informatique). Vous trouverez plus de détail sur le fonctionnement d’une ESN, et notamment comment les offres d’Arolla émergent, dans l’annexe « Qu’est-ce qu’une ESN ? »
+<a name="_ftn1"></a>[\[1\]](#_ftnref1) Entreprise au service du numérique, ce qu’on appelait avant SSII (Société de service en ingénierie informatique). Vous trouverez plus de détail sur le fonctionnement d’une ESN, et notamment comment les offres d’Arolla émergent, dans l’annexe « Qu’est-ce qu’une ESN ? »
 
-[\[2\]](#_ftnref1) Software craftership est la déclinaison inclusive du terme software craftsmanship, que vous trouverez encore souvent.
+<a name="_ftn2"></a>[\[2\]](#_ftnref2) Software craftership est la déclinaison inclusive du terme software craftsmanship, que vous trouverez encore souvent.

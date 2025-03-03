@@ -24,12 +24,12 @@ layout: default
   <div class="nav-links">
     <div class="previous-link">
       {% if page.next %}
-      <a rel="prev" href="{{ page.next.url }}">&lt; {{ page.next.title }}</a>
+      &lt; {{ page.next.description }} - <a rel="prev" href="{{ page.next.url }}">{{ page.next.title }}</a>
       {% endif %}
     </div>
     <div class="next-link">
       {% if page.previous %}
-      <a rel="next" href="{{ page.previous.url }}">{{ page.previous.title }} &gt;</a>
+      {{ page.previous.description }} - <a rel="next" href="{{ page.previous.url }}">{{ page.previous.title }} &gt;</a>
       {% endif %}
     </div>
   </div>

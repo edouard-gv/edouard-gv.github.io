@@ -1,9 +1,9 @@
 ---
 layout: post
 title:  "D’autres endroits où je parle de management craft"
-date:   2020-12-18 01:00:00 +0100
+date:   2020-12-18 13:00:00 +0100
 categories: craft craft-leadership
-description: "Annexe"
+description: "Annexe 1"
 ---
 
 - [Craftleadership: Craft Your Leadership as Developers Craft Code – InfoQ](https://www.infoq.com/articles/craftleadership-developers-craft-code/)
