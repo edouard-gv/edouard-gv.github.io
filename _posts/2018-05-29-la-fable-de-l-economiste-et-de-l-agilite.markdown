@@ -2,7 +2,7 @@
 layout: post
 title:  "La fable de l’économiste et de l’agilité"
 date:   2018-05-29 21:23:00 +0100
-categories: craft fables
+categories: agilite fables
 ---
 
 Il était une fois un économiste qui essayait de comprendre pourquoi les projets de développement logiciel qui marchaient bien étaient en fait ceux qui utilisaient des principes qui étaient censés ne pas fonctionner. En l’occurrence, il avait remarqué que dans les projets qui marchaient bien, ses membres ne cherchaient pas à être efficaces. Ils n’essayaient pas non plus d’éviter que les imprévus surviennent. Et lorsqu’ils étaient alors en retard, il ne cherchaient pas à tout prix à refaire rentrer les choses dans le planning. D’ailleurs, ils évitaient de trop planifier d’une façon générale. Autre chose : au lieu de gagner du temps en regroupant les tâches similaires pour les traiter d’un coup, ils essayaient d’aller jusqu’au bout de chaque petit développement. L’économiste remarqua aussi qu’ils évitaient de trop se spécialiser. Et, finalement, il semblait que les projets n’avait pas de point central de contrôle.

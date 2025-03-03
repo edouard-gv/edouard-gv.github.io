@@ -31,8 +31,8 @@ layout: default
   
       <li>
         <span class="post-meta">{{ post.date | date: date_format }} 
-        {%- if is_cat != true -%}
-          — <a href="/{{ post.categories | first}}/">{{ post.categories | first | capitalize}}</a>
+        {% if is_cat != true %}
+          — <a href="/{{ post.categories | first}}/">{{ post.categories | first | replace: "agilite", "agilité" | capitalize}}</a>
         {%- endif -%}
         </span>
         <h3>
@@ -68,7 +68,7 @@ layout: default
           <span class="post-meta">{{ post.date | date: date_format }} 
             {% if is_cat == true or post.categories contains "fables" -%}
             {%- else -%}
-          — <a href="/{{ post.categories | first }}/">{{ post.categories | first | capitalize}}</a>
+          — <a href="/{{ post.categories | first }}/">{{ post.categories | first | replace: "agilite", "agilité" | capitalize}}</a>
             {%- endif -%}
           </span>
           {%- endif -%}

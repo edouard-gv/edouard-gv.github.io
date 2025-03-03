@@ -2,7 +2,7 @@
 layout: post
 title:  "La fable du militaire et de l’agilité"
 date:   2020-10-24 21:23:00 +0100
-categories: craft fables
+categories: agilite fables
 ---
 
 Il était une fois un consultant qui n’avait jamais fait son service militaire, ni jamais côtoyé un militaire terrain de près. Pour lui, le meilleur stratège tacticien était Napoléon, et la seule chose qui changeait aujourd’hui par rapport à Guère et Paix il le voyait sur CNN : les bombes étaient maintenant télécommandées à des milliers de kilomètres. La technologie avait elle aussi digitalisé l’armée, en modifiant fondamentalement son rapport à la nation : entre le soldat et l’arme s’intercale le réseau protecteur. Grâce à la technologie, le soldat, mais aussi le parent de soldat, et donc tous les citoyens, n’ont plus à accepter le prix du sang en échange de la protection de l’État. Le contrat seigneurial est caduc.

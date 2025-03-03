@@ -2,7 +2,7 @@
 layout: post
 title:  "La fable du développeur crafts et de l’agilité"
 date:   2018-05-22 21:23:00 +0100
-categories: craft fables
+categories: agilite fables
 ---
 
 Il était une fois un développeur qui avait vite plongé dans l’extreme programming. C’était quelqu’un avec une capacité d’introspection impressionnante et qui était d’une bienveillance infinie notamment avec les autres crafters. On ne savait pas vraiment s’il avait embrassé l’XP parce que cela correspondait à ses propres qualités, ou s’il les avaient acquises à force de travailler en XP.

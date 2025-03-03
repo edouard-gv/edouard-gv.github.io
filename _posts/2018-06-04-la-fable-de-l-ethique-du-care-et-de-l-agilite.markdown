@@ -2,7 +2,7 @@
 layout: post
 title:  "La fable de l’éthique du care et de l’agilité"
 date:   2018-06-04 21:23:00 +0100
-categories: craft fables
+categories: agilite fables
 ---
 
 Il était une fois un manager qui avait un peu de mal avec ces environnements virils, ou les problèmes se résolvaient dans le conflit, où pour être légitime il fallait être chef, et pour être chef savoir crier plus fort et poser ses “bawls” sur la table. Les autres qualités qu’on respectaient chez les chefs étaient la fiabilité dans le contrôle et le reporting. Savoir accepter sans émotion des décisions bonnes pour l’entreprise bien qu’humainement douloureuses étaient considéré comme une grande force de caractère. En outre, il ne comprenait pas trop comment des décisions pouvaient être basées en considérant chaque entité autonome, chaque personne comme un individu capable de discernement froid, alors que tout était lié et chaque humain sensible.

@@ -2,7 +2,7 @@
 layout: post
 title:  "Raconte moi une histoire"
 date:   2018-05-07 18:19:52 +0100
-categories: craft
+categories: agilite
 ---
 
 **Quand j’accompagnais des transformations agiles, je me retrouvais souvent à raconter des histoires, des petites ou des grandes, sans faire particulièrement attention, naturellement. Puis je me suis rendu compte que je piochais de plus en plus dans une espèce de corpus, plus ou moins mythique, souvent partagé, et adaptant le discours à la personne en face de moi. J’ai commencé à faire très attention : mythes et mensonges sont bien proches parfois, à l’équilibre entre la vérité et le réconfort de la culture.**
