@@ -40,7 +40,37 @@ ul, ol, dl, figure,
   margin-bottom: $spacing-unit / 2;
 }
 
-.notes {
+
+.post-blocks {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.std-cat {
+  max-width: ($content-width - $spacing-unit * 2) * 2 / 3 - 2;
+}
+
+.spec-cat {
+  border-top: 1px $brand-color solid;
+
+  &:nth-child(2) {
+    max-width: ($content-width - $spacing-unit * 2)/ 3 - 2;
+  }
+
+  &:not(:nth-child(2)) {
+    width: 100%;
+  }
+  
+}
+
+.rss-subscribe {
+  padding-top: $spacing-unit;
+  border-top: 1px $brand-color solid;
+}
+
+
+.spec-cat {
   & h1, h2, h3, h4, h5, h6,
   p, blockquote, pre, ol, dl, figure,
   %vertical-rhythm {
@@ -49,7 +79,7 @@ ul, ol, dl, figure,
   
 }
 
-.notes .post-list > li {
+.spec-cat .post-list > li {
   margin-bottom: $spacing-unit / 2;
 }
 
