@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Le produit c'est l'équipe"
-date:   2025-02-24 12:39:00 +0100
+date:   2022-02-24 12:39:00 +0100
 categories: agilite
 ---
 
