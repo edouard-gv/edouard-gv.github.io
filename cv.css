@@ -123,3 +123,39 @@
     background-color: #dad2d2;
     padding-left: 10px;
 }
+
+@media print {
+    .header {
+        font-size: 10px;
+    }
+    
+    .Note {
+        font-size: 10px;
+    }
+
+    .MsoListParagraph::before {
+        font-size: 12px;
+    }
+
+    div.MsoTableGrid h2 {
+        font-size: 14px;
+    }
+
+    .small-h1 {
+        font-size: 12px;
+    }
+
+    .chronology h2 {
+        color: #000;
+        background-color: #FFF;
+        padding-left: 0px;
+    }
+    h4 {
+        margin: 10px 0px 0px 0px;
+    }
+
+    p {
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+}

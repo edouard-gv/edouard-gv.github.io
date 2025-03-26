@@ -91,3 +91,20 @@ em {
     font-style: normal;
     color: #863e3e; 
 }
+
+@media print {
+    body {
+        font-family: 'Inter', sans-serif;
+        font-size: 11px;
+        line-height: 1.2;
+    }
+    h1 {
+        font-size: 18px;
+    }
+    h2 {
+        font-size: 16px;
+    }
+    h3 {
+        font-size: 14px;
+    }
+}
