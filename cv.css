@@ -124,6 +124,38 @@
     padding-left: 10px;
 }
 
+.small-cv h2 {
+    margin-bottom: 5px;
+}
+
+.small-cv h3, .small-cv h4, .small-cv p.period {
+    margin: 0;
+}
+
+.small-cv h3, .small-cv p.period{
+    display: inline;
+}
+
+
+p.period::before {
+    content: '(';
+    margin-left: 1em
+}
+
+p.period:after {
+    content: ')';
+}
+
+.small-cv h2 {
+    border-top: #000 1px solid;
+    padding-top: 10px;
+}
+
+ul.principal {
+    list-style-type: none;
+    padding: 0;
+}
+
 @media print {
     .header {
         font-size: 10px;
