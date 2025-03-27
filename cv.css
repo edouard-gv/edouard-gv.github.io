@@ -124,6 +124,22 @@
     padding-left: 10px;
 }
 
+.small-cv {
+    display: grid;
+    grid-template-areas: 
+        "b1"
+        "b2"
+        "b3";
+}
+
+#b1 {
+    grid-area: b1;
+}
+
+#b2 {
+    grid-area: b2;
+}
+
 .small-cv h2 {
     margin-bottom: 5px;
 }
