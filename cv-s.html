@@ -14,11 +14,20 @@
 <body>
     <div class="container small-cv">
         <div id="b1">
-            <h1>Édouard Gomez-Vaëz <br><span class="small-h1"> Engineering Manager – Architecte Logiciel – Coach
-                    Agile</span></h1>
+            <h1>Édouard Gomez-Vaëz <br><span class="small-h1">
+                <script>
+                    const params = new URLSearchParams(window.location.search);
+                    if (params.has('em')) {
+                        document.write('Engineering Manager Craft');
+                    } else if (params.has('vp')) {
+                        document.write('VP of Engineering');
+                    } else {
+                        document.write('Engineering Manager – Architecte Logiciel – Coach Agile');
+                    }
+                </script></span></h1>
         </div>
         <div id="b3">
-            <p>Engineering Manager passionné par l'innovation produit, avec 25 ans d’expérience entre start-up,
+            <p>Ingénieur passionné par l'innovation produit, avec 25 ans d’expérience entre start-up,
                 scale-up, et
                 conseil pour de grands groupes. Leader d'équipes tech pluridisciplinaires, promoteur du Software
                 Craftership

@@ -40,8 +40,20 @@
         </h2>
       </div>
 
-      <h1 class="MsoTitle">Engineering Manager Craft<br>
-        <span class="small-h1">Coconstruire des équipes autonomes et des architectures modulaires au service du
+      <h1 class="MsoTitle">
+        <script>
+        const params = new URLSearchParams(window.location.search);
+        if (params.has('em')) {
+            document.write('Engineering Manager Craft')
+            document.write('<br><span class="small-h1">')
+        } else if (params.has('vp')) {
+            document.write('VP of Engineering')
+            document.write('<br><span class="small-h1">')
+        } else {
+          document.write('<br><span>')
+        }
+        </script>
+        Coconstruire des équipes autonomes et des architectures modulaires au service du
           meilleur&nbsp;product&nbsp;management</span>
       </h1>
       <div class="MsoTableGrid">
