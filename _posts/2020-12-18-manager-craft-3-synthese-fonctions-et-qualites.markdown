@@ -68,14 +68,14 @@ Si nous comparons la description des fonctions attendues en général avec les q
 
 Fonctions attendues
 
-Qualités appréciées
-
 1.  Gérer l’administratif, droits, fonctions support (RH, achat, juridique)
 2.  Gérer les budgets et les ressources
 3.  S’assurer que les règles existent, sont connues et suivies
 4.  S’assurer d’une forme d’équité, d’équilibre
 5.  Organiser et animer grâce à sa vision d’ensemble / faire le médiateur avec l’extérieur
 6.  Accompagner chaque membre de l’équipe
+
+Qualités appréciées
 
 1.  Expertise
 2.  Humanité : sympathie, respect de l’autre et de soi-même
@@ -86,6 +86,6 @@ Qualités appréciées
 7.  Écoute et humilité
 8.  Rend son équipe autonome
 
-Néanmoins, les deux premières fonctions a) et b), administratives, de la manager, ne sont pour ainsi dire jamais associées à des qualités spontanément appréciées dans une manager idéale. Par exemple, nous n’avons jamais entendu, lorsque nous avons demandé « en quoi telle manager était inspirante », quelque chose comme « elle savait régler les problèmes administratifs rapidement ». Nous avons l’impression que ces aspects administratifs semblent bien être des aspects rébarbatifs du rôle, pas forcément valorisés.
+Néanmoins, les deux premières fonctions 1) et 2), administratives, de la manager, ne sont pour ainsi dire jamais associées à des qualités spontanément appréciées dans une manager idéale. Par exemple, nous n’avons jamais entendu, lorsque nous avons demandé « en quoi telle manager était inspirante », quelque chose comme « elle savait régler les problèmes administratifs rapidement ». Nous avons l’impression que ces aspects administratifs semblent bien être des aspects rébarbatifs du rôle, pas forcément valorisés.
 
-Les quatre autres types d’actions c) à f) sont en revanche bien associées à des qualités de manager idéale.
+Les quatre autres types d’actions 3) à 6) sont en revanche bien associées à des qualités de manager idéale.
