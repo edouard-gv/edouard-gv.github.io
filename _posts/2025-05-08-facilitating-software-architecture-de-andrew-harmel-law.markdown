@@ -2,7 +2,7 @@
 layout: post
 title:  "Facilitating Software Architecture de Andrew Harmel-Law"
 date:   2025-05-08 15:22 +0100
-categories: agilite notes
+categories: craft
 ---
 
 # Introduction
